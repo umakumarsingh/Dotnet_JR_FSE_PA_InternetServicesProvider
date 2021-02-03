@@ -1,0 +1,36 @@
+﻿@model InternetServicesProvider.Entities.Complaint
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="card" style="width:100%; margin-top:10px;">
+    <div class="card-header bg-dark text-white">
+        <h5>Internet Services Booked Complaint Details</h5>
+    </div>
+    <div class="card-body">
+        <table class="table table-borderless">
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(m => m.Subject)</b>
+                </td>
+                <td>@Html.DisplayFor(m => m.Subject)</td>
+                <td>
+                    <b>@Html.DisplayNameFor(m => m.Description)</b>
+                </td>
+                <td>@Html.DisplayFor(m => m.Description)</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(m => m.CustomerId)</b>
+                </td>
+                <td>@Html.DisplayFor(m => m.CustomerId)</td>
+                <td>
+                    <b>@Html.DisplayNameFor(m => m.Email)</b>
+                </td>
+                <td>@Html.DisplayFor(m => m.Email)</td>
+            </tr>
+        </table>
+        <p>
+            @Html.ActionLink("Back to List", "Index", "Home", new { @class = "btn btn-primary" })
+        </p>
+    </div>
+</div>

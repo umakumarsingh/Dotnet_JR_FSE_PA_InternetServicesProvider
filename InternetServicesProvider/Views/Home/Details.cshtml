@@ -1,0 +1,33 @@
+﻿@model InternetServicesProvider.Entities.Plan
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="card" style="width:100%; margin-top:10px;">
+    <div class="card-header bg-dark text-white">
+        <h5>Internet Services Plan Details</h5>
+    </div>
+    <div class="card-body">
+        <table class="table table-borderless">
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(m => m.PlanName)</b>
+                </td>
+                <td>@Html.DisplayFor(m => m.PlanName)</td>
+                <td>
+                    <b>@Html.DisplayNameFor(m => m.PlanExpiryDate)</b>
+                </td>
+                <td>@Html.DisplayFor(m => m.PlanExpiryDate)</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(m => m.Description)</b>
+                </td>
+                <td>@Html.DisplayFor(m => m.Description)</td>
+            </tr>
+        </table>
+        <p>
+            @Html.ActionLink("Book Plan Now", "BookNewPlan", "Home", new { PlanId = Model.PlanId }, new { @class = "btn btn-danger" })
+            @Html.ActionLink("Back to List", "Index", "Home", new { @class = "btn btn-primary" })
+        </p>
+    </div>
+</div>

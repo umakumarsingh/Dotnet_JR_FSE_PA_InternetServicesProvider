@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Not Valid Customer";
+}
+<div class="card" style="width:100%; margin-top:10px;">
+    <div class="card-header bg-dark text-white">
+        <h5>Customer Not Valid</h5>
+    </div>
+    <div class="card-body">
+        <table class="table table-borderless">
+            <tr>
+                <td>
+                    <b>Customer Id = @ViewBag.CustomerId is not valid, Please register first to book any internet plan.</b>
+                </td>
+            </tr>
+        </table>
+        <p>
+            @Html.ActionLink("Register Customer", "RegisterNewCustomer", "Home", new { @class = "btn btn-danger" }) ||
+            @Html.ActionLink("Back to List", "Index", "Home", new { @class = "btn btn-primary" })
+        </p>
+    </div>
+</div>

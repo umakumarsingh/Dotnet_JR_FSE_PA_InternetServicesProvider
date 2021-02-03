@@ -1,0 +1,78 @@
+﻿@model InternetServicesProvider.BusinessLayer.ViewModels.CustomerViewModel
+@{
+    ViewData["Title"] = "Placeorder";
+}
+
+<div class="card" style="width:100%; margin:10px;">
+    <div class="card-header bg-success text-white">
+        <h5>Register New Customer</h5>
+    </div>
+    <div class="card-body">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.UserName)
+                        @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.PhoneNumber)
+                        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.BusinessType)
+                        @Html.TextBoxFor(m => m.BusinessType, new { @class = "form-control" })
+                        <span asp-validation-for="BusinessType" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Email)
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Age)
+                        @Html.TextBoxFor(m => m.Age, new { @class = "form-control" })
+                        <span asp-validation-for="Age" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Region)
+                        @Html.TextBoxFor(m => m.Region, new { @class = "form-control" })
+                        <span asp-validation-for="Region" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Address)
+                        @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Register</button>
+                <button class="btn btn-danger" onclick="location.href='@Url.Action("Index", "Home")';return false;">Back To Home</button>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,9 @@
+D:\IIHT\Task-16\InMemory\InternetServicesProvider.Entities\bin\Debug\netcoreapp2.2\InternetServicesProvider.Entities.deps.json
+D:\IIHT\Task-16\InMemory\InternetServicesProvider.Entities\bin\Debug\netcoreapp2.2\InternetServicesProvider.Entities.dll
+D:\IIHT\Task-16\InMemory\InternetServicesProvider.Entities\bin\Debug\netcoreapp2.2\InternetServicesProvider.Entities.pdb
+D:\IIHT\Task-16\InMemory\InternetServicesProvider.Entities\obj\Debug\netcoreapp2.2\InternetServicesProvider.Entities.AssemblyInfoInputs.cache
+D:\IIHT\Task-16\InMemory\InternetServicesProvider.Entities\obj\Debug\netcoreapp2.2\InternetServicesProvider.Entities.AssemblyInfo.cs
+D:\IIHT\Task-16\InMemory\InternetServicesProvider.Entities\obj\Debug\netcoreapp2.2\InternetServicesProvider.Entities.csproj.CoreCompileInputs.cache
+D:\IIHT\Task-16\InMemory\InternetServicesProvider.Entities\obj\Debug\netcoreapp2.2\InternetServicesProvider.Entities.dll
+D:\IIHT\Task-16\InMemory\InternetServicesProvider.Entities\obj\Debug\netcoreapp2.2\InternetServicesProvider.Entities.pdb
+D:\IIHT\Task-16\InMemory\InternetServicesProvider.Entities\obj\Debug\netcoreapp2.2\InternetServicesProvider.Entities.csprojAssemblyReference.cache
